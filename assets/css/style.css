@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+/* création des colonnes en % avec 6 chiffres après la virgule*/
+.col_1 {width: 8.333333%; min-height: 80px;}
+.col_2 {width: 16.666666%; min-height: 80px;}
+.col_3 {width: 25%; min-height: 80px;}
+.col_4 {width: 33.333333%; min-height: 80px;}
+.col_5 {width: 41.666666%; min-height: 80px;}
+.col_6 {width: 50%; min-height: 80px;}
+.col_7 {width: 58.333333%; min-height: 80px;}
+.col_8 {width: 66.666666%; min-height: 80px;}
+.col_9 {width: 75%; min-height: 80px;}
+.col_10 {width: 83.333333%; min-height: 80px;}
+.col_11 {width:91.666666%; min-height: 80px;}
+.col_12 {width: 100%; min-height: 80px;}
+
+.container{
+    margin: 0 auto;
+    /* background-color: aqua; */
+    min-height: 100px;
+    width: 100%;
+    font-family: "Exo", sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 90px;
+    /* background-color: blue; */
+}
+
+.slide{
+    margin: auto;
+    text-align: center;
+}
+
+.myHr{
+    border: 3px solid rgb(1, 6, 69);
+    margin: 30px;
+}
+
+.link{
+    text-align: right;
+}
+
+.link a{
+    color: rgb(255, 113, 198);
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 15%;
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom:6px;
+    background-color: rgb(1, 6, 69);
+}
+
+nav a{
+    text-decoration: none;
+    color:#fff;
+    background-color: rgb(1, 6, 69);
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a:first-child{
+    background-color: rgb(255, 113, 198);
+}
+
+.imgLogo{
+    margin-top: 20px;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.panier{
+    background-color: rgb(255, 113, 198);
+    padding: 20px;
+    color: white;
+}
+
+footer{
+    font-family: "Exo", sans-serif;
+    margin-top: 5%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgb(1, 6, 69);
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .col_2{width: 100%;}
+    .col_3{width: 100%;}
+    .col_4{width: 100%;}
+    .col_5{width: 100%;}
+    .col_6{width: 100%;}
+    .col_9{width: 100%;}
+
+    .slide img{
+        width: 100%;
+    }
+
+    nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .panier{
+        margin-bottom: 10px;
+    }
+}
